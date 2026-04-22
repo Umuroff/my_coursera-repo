@@ -1,0 +1,132 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-section {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-section legend {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-yellow);
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-group:last-child { margin-bottom: 0; }
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--highlight-dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.65rem 0.9rem;
+  border: 2px solid #d0d5dd;
+  border-radius: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--highlight-dark);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(73, 94, 87, 0.15);
+}
+
+.form-group input.input-error,
+.form-group select.input-error {
+  border-color: #c0392b;
+  background-color: #fff5f5;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.error-message {
+  color: #c0392b;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.error-message::before {
+  content: '⚠';
+}
+
+.field-hint {
+  font-size: 0.82rem;
+  color: #666;
+}
+
+.required {
+  color: #c0392b;
+  font-weight: 700;
+}
+
+.required-note {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  padding: 0.9rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 0.75rem;
+  background-color: var(--primary-green);
+  color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.submit-btn:hover {
+  background-color: #3a4d46;
+  transform: translateY(-2px);
+}
+
+.submit-btn:focus-visible {
+  outline: 3px solid var(--primary-yellow);
+  outline-offset: 3px;
+}

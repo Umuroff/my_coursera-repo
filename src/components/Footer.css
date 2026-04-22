@@ -1,0 +1,73 @@
+.footer {
+  background-color: var(--primary-green);
+  color: var(--white);
+  padding-top: 3rem;
+  margin-top: auto;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+.footer-nav h3,
+.footer-contact h3 {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-nav a,
+.footer-contact a {
+  color: var(--white);
+  opacity: 0.9;
+  transition: opacity 0.2s;
+  font-size: 0.95rem;
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  font-style: normal;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
